@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gage Pack – Portfolio</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/custom1.css" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Gage Pack</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="resume.html">Résumé</a></li>
+          <li class="nav-item"><a class="nav-link" href="scratch.html">Scratch Page</a></li>
+          <li class="nav-item"><a class="nav-link" href="webapp.html">Web App</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header class="py-5 bg-light">
+    <div class="container text-center">
+      <h1 class="display-4">Hi, I'm Gage Pack</h1>
+      <p class="lead">BYU Pre-Business Student • Soccer Fan • Future Business Leader</p>
+      <a href="resume.html" class="btn btn-primary btn-lg">View My Résumé</a>
+    </div>
+  </header>
+  <main class="container my-5">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Scratch Page</h5>
+            <p class="card-text">
+              A hand-coded page showing custom HTML/CSS, a YouTube video, and a Tableau visualization
+              about soccer.
+            </p>
+            <a href="scratch.html" class="btn btn-outline-primary">See Scratch Page</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Web App with AI Help</h5>
+            <p class="card-text">
+              A small interactive riddle generator app built in collaboration with AI.
+            </p>
+            <a href="webapp.html" class="btn btn-outline-primary">Try the App</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Visualizations & Media</h5>
+            <p class="card-text">
+              Explore embedded soccer highlights and data visualizations.
+            </p>
+            <a href="scratch.html#tableau-section" class="btn btn-outline-primary">
+              View Visualizations
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-light py-3 text-center">
+    <p class="mb-0">&copy; <span id="year"></span> Gage Pack</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
